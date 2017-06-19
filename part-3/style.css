@@ -3,17 +3,59 @@ body {
   margin: 0;
 }
 
-#left-column{
-  background-color: grey;
-  width: 25%
-}
-
-#right-column{
-  background-color: white;
-  width: 75%
+button {
+  padding: .5em;
+  font-size: 1em;
+  background-color: #8d9db6;
+  border: 3px outset #bccad6;
 }
 
 .row {
 	display: flex;
 	flex-direction: row;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.header{
+  background-color: #667292;
+  padding: 0em 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-column{
+  background-color: #bccad6;
+  width: 25%;
+  padding: 1em;
+}
+
+.menu-title{
+  background-color: #8d9db6;
+  margin: 0;
+  text-align: center;
+}
+
+.right-column{
+  background-color: #f1e3dd;
+  padding: 1em;
+  width: 75%;
+}
+
+.item-name{
+  width: 30%;
+  text-align: center;
+}
+
+.item-price{
+  width: 30%;
+  text-align: center;
+
+}
+
+.add-to-cart{
+  margin: 3em;
+  width: 30%;
 }
