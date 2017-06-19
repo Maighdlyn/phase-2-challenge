@@ -17,3 +17,11 @@ function numProps(obj) {
 }
 
 // Filter between
+function filterBetween (array, min, max) {
+  var newArray = []
+  for(i=0; i<array.length; i++){
+    if (array[i] >= min && array[i] <= max)
+    newArray.push(array[i])
+  }
+  return newArray
+}
