@@ -7,9 +7,13 @@ function snippet (string, maxLength) {
     return shortenedString
   }
   else {
-    console.log("not it!")
     return string
   }
 }
 
-snippet ("hello", 2)
+// Number of properties
+function numProps(obj) {
+  return Object.keys(obj).length
+}
+
+// Filter between
