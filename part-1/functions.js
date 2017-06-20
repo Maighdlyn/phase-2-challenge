@@ -25,3 +25,27 @@ function filterBetween (array, min, max) {
   }
   return newArray
 }
+
+// module.exports = function (){
+//   return 'hellos'
+// }
+
+function hello(){
+  return "hello"
+}
+
+
+module.exports = {
+  hello: hello(),
+  snippet: function (string, maxLength) {
+    if (string.length > maxLength) {
+      var shortenedString = string.slice(0,maxLength) + "..."
+      return shortenedString
+    }
+    else {
+      return string
+    }
+  },
+  numProps: numProps({}),
+  filterBetween: filterBetween([])
+}

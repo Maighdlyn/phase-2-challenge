@@ -1,18 +1,31 @@
 const expect = require('chai').expect
-const functions = require('./functions.js')
+const assert = require('chai').assert
+const hello = require('../functions.js').hello
+const snippet = require('../functions.js').snippet
 
-describe('Get a snippet from text', (done) => {
-  it("Shortens string correctly", () => {
-    expect(snippet("For the following exercises,", 10)).to.equal("For the fo…")
-  })
-  it("Displays whole string when appropriate", () => {
-    expect(snippet("Hello, world!", 20)).to.equal("Hello, world!")
+
+describe("Phase-2 part-1 tests", (done) => {
+  it('Get a snippet from text', () => {
+    let result = snippet("For the following exercises,", 10)
+    assert.equal(result, "For the fo...")
   })
 })
 
-
-
-// console.log(functions)
-
+// describe('Get a snippet from text', (done) => {
+//   it("Shortens string correctly", () => {
+//     expect(snippet("For the following exercises,", 10)).to.equal("For the fo…")
+//   })
+//   it("Displays whole string when appropriate", () => {
+//     expect(snippet("Hello, world!", 20)).to.equal("Hello, world!")
+//   })
+// })
 
 // ("For the following exercises,", 10) // => "For the fo…"
+
+
+
+describe('App', function(){
+  it('app should return hello', function(){
+    assert.equal(hello, 'hello')
+  })
+})
