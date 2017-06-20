@@ -14,7 +14,7 @@ module.exports = {
     function (obj) {
       return Object.keys(obj).length
     },
-    
+
   filterBetween:
     function (array, min, max) {
       var newArray = []
