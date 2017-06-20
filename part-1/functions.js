@@ -1,6 +1,12 @@
 module.exports = {
+  weekday:
+    function weekday(date){
+      var daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+      return daysOfWeek[date.getDay()]
+    },
+
   snippet:
-    function (string, maxLength) {
+    function snippet (string, maxLength) {
       if (string.length > maxLength) {
         var shortenedString = string.slice(0,maxLength) + "..."
         return shortenedString
@@ -11,12 +17,12 @@ module.exports = {
     },
 
   numProps:
-    function (obj) {
+    function numProps(obj) {
       return Object.keys(obj).length
     },
 
   filterBetween:
-    function (array, min, max) {
+    function filterBetween (array, min, max) {
       var newArray = []
       for(i=0; i<array.length; i++){
         if (array[i] >= min && array[i] <= max)
