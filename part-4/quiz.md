@@ -6,34 +6,43 @@ _Reminder: you can use the internet to help you answer these questions :)_
 <!-- Still need to answer!!! -->
 
 - On a UNIX computer, how do you stop a running process?
-<!-- Still need to answer!!! -->
+  Ctrl + C
 
 - What packages do you have installed via homebrew?
 <!-- Still need to answer!!! -->
 
 - On a UNIX computer, how do you find the process id of a running process?
-<!-- Still need to answer!!! -->
+  $ ps aux | grep {process-name}
+<!-- Read more about this later. -->
 
 - In a terminal, what does control-c do?
-<!-- Still need to answer!!! -->
+  Control-c stops whatever process is running.
 
 - In a terminal, what does control-a do?
-<!-- Still need to answer!!! -->
+  Control-a jumps the cursor to the beginning of the line.
 
 - In a terminal, what does control-e do?
-<!-- Still need to answer!!! -->
+  Control-e jumps the cursor to the end of the line.
 
 - What keyboard shortcut do you use to split the screen in your editor?
-<!-- Still need to answer!!! -->
+<!-- The internet's suggestion of command + k + arrow doesn't work... needs further digging -->
 
 - What keyboard shortcut do you use to split the screen in your terminal?
-<!-- Still need to answer!!! -->
+  To split vertically: command + shift + d
+  To split horizontally: command + d
 
 - When a terminal command completes, how can you tell if it was successful or not?
 <!-- Still need to answer!!! -->
 
 - What does your `~/.gitconfig` have in it? (paste the whole file here)
-<!-- Still need to answer!!! -->
+  # This is Git's per-user configuration file.
+  [user]
+  # Please adapt and uncomment the following lines:
+  #	name = Emma Brown
+  #	email = emb42@humboldt.edu
+  [user]
+  name = maighdlyn
+  email = emmamaighdlyn@gmail.com
 
 - What is the difference between a relative and absolute path?
 <!-- Still need to answer!!! -->
