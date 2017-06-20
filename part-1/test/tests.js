@@ -35,7 +35,7 @@ describe("Phase 2 Challenge: Part 1", () => {
   describe("Filter between", () => {
     let arr = [1, 2, 3, 4, 5, 6, 7]
     it ("filters array", () => {
-      expect(filterBetween(arr, 3, 6)).to.equal([3, 4, 5, 6])
+      expect(filterBetween(arr, 3, 6)).to.eql([3, 4, 5, 6])
     })
   })
 })
