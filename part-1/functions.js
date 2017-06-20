@@ -1,27 +1,33 @@
-// Show a weekday
+module.exports = {
+  weekday:
+    function weekday(date){
+      var daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+      return daysOfWeek[date.getDay()]
+    },
 
-// Get a snippet from text
-function snippet (string, maxLength) {
-  if (string.length > maxLength) {
-    var shortenedString = string.slice(0,maxLength) + "..."
-    return shortenedString
-  }
-  else {
-    return string
-  }
-}
+  snippet:
+    function snippet (string, maxLength) {
+      if (string.length > maxLength) {
+        var shortenedString = string.slice(0,maxLength) + "..."
+        return shortenedString
+      }
+      else {
+        return string
+      }
+    },
 
-// Number of properties
-function numProps(obj) {
-  return Object.keys(obj).length
-}
+  numProps:
+    function numProps(obj) {
+      return Object.keys(obj).length
+    },
 
-// Filter between
-function filterBetween (array, min, max) {
-  var newArray = []
-  for(i=0; i<array.length; i++){
-    if (array[i] >= min && array[i] <= max)
-    newArray.push(array[i])
-  }
-  return newArray
+  filterBetween:
+    function filterBetween (array, min, max) {
+      var newArray = []
+      for(i=0; i<array.length; i++){
+        if (array[i] >= min && array[i] <= max)
+        newArray.push(array[i])
+      }
+      return newArray
+    }
 }
