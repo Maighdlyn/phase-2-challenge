@@ -18,7 +18,7 @@ Each requirement has a point value. A fully complete requirement gets full point
 ## General Requirements
 
 - [X] __10:__ Solution is in a public GitHub repository called `phase-2-challenge`.
-- [] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
+- [X] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
 - [X] __20:__ Git history shows frequent commits.
 
 ## Part 1: Write tests and solutions for these functions
@@ -166,8 +166,8 @@ Finding clients in state "Maryland"...
 
 #### Requirements
 
-- [ ] __40:__ `searchByName.js` script prints the client  `id` and `rep_name` for all clients whose `rep_name` starts with the provided `name` argument.
-- [ ] __40:__ `searchByState.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `state` matches the provided `state` argument.
+- [X] __40:__ `searchByName.js` script prints the client  `id` and `rep_name` for all clients whose `rep_name` starts with the provided `name` argument.
+- [X] __40:__ `searchByState.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `state` matches the provided `state` argument.
 
 ## Part 3: HTML layout for grocery store
 
