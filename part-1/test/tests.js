@@ -2,8 +2,18 @@ const expect = require('chai').expect
 const snippet = require('../functions.js').snippet
 const numProps = require('../functions.js').numProps
 const filterBetween = require('../functions.js').filterBetween
+const weekday = require('../functions.js').weekday
 
 describe("Phase 2 Challenge: Part 1", () => {
+  describe("Show a weekday", () => {
+    it("Shows correct day for first example in challenge", () => {
+      let date = new Date(2017, 5, 19)
+      expect(weekday(date)).to.equal("Mon")
+    })
+    it("Shows correct day for second example in challenge", () => {
+      expect(weekday(new Date(2017, 5, 15))).to.equal("Thu")
+    })
+  })
   describe("Get a snippet from text", (done) => {
     it('Shortens string correctly', () => {
       expect(snippet("For the following exercises,", 10)).to.equal("For the fo...")
