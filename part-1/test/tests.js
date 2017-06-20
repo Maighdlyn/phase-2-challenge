@@ -1,7 +1,8 @@
 const expect = require('chai').expect
 const assert = require('chai').assert
-const hello = require('../functions.js').hello
 const snippet = require('../functions.js').snippet
+const numProps = require('../functions.js').numProps
+const filterBetween = require('../functions.js').filterBetween
 
 
 describe("Get a snippet from text", (done) => {
