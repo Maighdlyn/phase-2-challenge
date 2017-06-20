@@ -4,8 +4,8 @@ const hello = require('../functions.js').hello
 const snippet = require('../functions.js').snippet
 
 
-describe("Phase-2 part-1 tests", (done) => {
-  it('Get a snippet from text', () => {
+describe("Get a snippet from text", (done) => {
+  it('Shortens string correctly', () => {
     let result = snippet("For the following exercises,", 10)
     assert.equal(result, "For the fo...")
   })
@@ -21,11 +21,4 @@ describe("Phase-2 part-1 tests", (done) => {
 // })
 
 // ("For the following exercises,", 10) // => "For the fo…"
-
-
-
-describe('App', function(){
-  it('app should return hello', function(){
-    assert.equal(hello, 'hello')
-  })
-})
+// })
