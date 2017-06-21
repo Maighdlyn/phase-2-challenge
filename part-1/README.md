@@ -1,7 +1,9 @@
 Tests are written in mocha-chai
 
 To run tests, run the following:
-npm run tests
+
+```npm run tests```
 
 To install mocha and chai, run the following:
-npm install mocha chai --save -dev
+
+```npm install mocha chai --save -dev```
