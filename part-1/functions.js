@@ -37,12 +37,9 @@ module.exports = {
 
   filterBetween:
     function filterBetween (array, min, max) {
-      if(typeof array != 'array'){
-        // || typeof min != 'number'
-        // || typeof max != 'number'
-      // ) {
-          return "Input must be an array then two numbers!"
-        }
+      if(Array.isArray(array) == false || typeof min != 'number' || typeof max != 'number'){
+        return "Input must be an array then two numbers!"
+      }
       else {
         var newArray = []
         for(i=0; i<array.length; i++){
@@ -53,6 +50,3 @@ module.exports = {
       }
     }
 }
-
-let date = (2017, 5, 19)
-console.log(date instanceof Date)

@@ -50,13 +50,16 @@ describe("Phase 2 Challenge: Part 1", () => {
       expect(numProps(5)).to.equal("Input must be an object!")
     })
   })
-//   describe("Filter between", () => {
-//     let arr = [1, 2, 3, 4, 5, 6, 7]
-//     it ("Filters array", () => {
-//       expect(filterBetween(arr, 3, 6)).to.eql([3, 4, 5, 6])
-//     })
-//     // it("Returns error when input is not (array, number, number)", () => {
-//     //   expect(filterBetween("string", 2, 5).to.equal("Input must be an array then two numbers!"))
-//     // })
-//   })
+  describe("Filter between", () => {
+    let arr = [1, 2, 3, 4, 5, 6, 7]
+    it ("Filters array", () => {
+      expect(filterBetween(arr, 3, 6)).to.eql([3, 4, 5, 6])
+    })
+    it ("Returns error when array input is not an array", () => {
+      expect(filterBetween('string', 2, 3)).to.equal("Input must be an array then two numbers!")
+    })
+    it ("Returns error when min or max input is not a number", () => {
+      expect(filterBetween([1, 2], 2, 'string')).to.equal("Input must be an array then two numbers!")
+    })
+  })
 })
