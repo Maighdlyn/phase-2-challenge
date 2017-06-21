@@ -86,7 +86,11 @@ email = emmamaighdlyn@gmail.com
 - What is the difference between a relative and absolute path?
 
 ```
-A relative path is a path written in relation to the location the path occurs in, an absolute path is the specific path where the file is located on a particular computer. For example, the relative path for README.md, relative to this quiz.md file, is "../README.md" but the absolute path for me is "/Users/emmabrown/Desktop/LGProjects/phase-2-challenge/part-4/quiz.md". It's better to use relative paths because as you're reading this on your computer, it will have a different absolute path.
+A relative path is a path written in relation to the location the path occurs in, an absolute path is the specific path where the file is located on a particular computer.
+
+For example, the relative path for README.md, relative to this quiz.md file, is "../README.md" but the absolute path for me is "/Users/emmabrown/Desktop/LGProjects/phase-2-challenge/part-4/quiz.md".
+
+It's better to use relative paths because as you're reading this on your computer, it will have a different absolute path.
 ```
 
 - Lets say you have the following file structure
@@ -109,12 +113,15 @@ cd ../pinterest-for-dogs
 ```
 
 - What keyboard shortcut do you use, in your editor, when you want to open a specific file?
-<!-- Still need to answer!!! -->
+
+```
+command + O
+```
 
 - What files or folders do you want all git repositories to ignore?
 
 ```
-You want git to ignore node_modules because you would typically include instructions in the README for the viewer to load that in their terminal. You would also want git to ignore .DS_store because that's local information that helps with things like icon location.
+I typically ignore .DS_Store and node_modules but it may be different depending on user and project. You should ignore anything that another user wouldn't need if they were loading your project on their computer.
 ```
 
 - What is the main difference between `==` and `===` in JavaScript?
