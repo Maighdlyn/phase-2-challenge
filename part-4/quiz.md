@@ -3,7 +3,10 @@ The quiz is worth __50 points__ in total.
 _Reminder: you can use the internet to help you answer these questions :)_
 
 - When you run a command in the terminal, where does BASH look for that command?
-<!-- Still need to answer!!! -->
+
+```
+BASH looks for the command in the directories in $PATH
+```
 
 - On a UNIX computer, how do you stop a running process?
 
@@ -27,7 +30,7 @@ google-chrome-canary       postico
 - On a UNIX computer, how do you find the process id of a running process?
 
   ```
-  $ ps aux | grep {process-name}
+  Run 'ps' or 'top' in your command line and the process id will show under "PID" in the left column.
   ```
 <!-- Read more about this later. -->
 
