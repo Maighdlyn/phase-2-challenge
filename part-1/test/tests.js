@@ -21,10 +21,10 @@ describe("Phase 2 Challenge: Part 1", () => {
     it("Displays whole string when shorter than maxLength", () =>{
       expect(snippet("Hello, world!", 20)).to.equal("Hello, world!")
     })
-    it("Throws error when string input is not a string", () => {
+    it("Returns error when string input is not a string", () => {
       expect(snippet(5, 10)).to.equal("Inputs must be a string and a number!")
     })
-    it("Throws error when maxLength is not a number", () => {
+    it("Returns error when maxLength is not a number", () => {
         expect(snippet("I'm a string", "I'm also a string")).to.equal("Inputs must be a string and a number!")
     })
   })
@@ -40,7 +40,9 @@ describe("Phase 2 Challenge: Part 1", () => {
     it("Returns 0 properties for an empty object", () => {
       expect(numProps({})).to.equal(0)
     })
-    //  A test using unexpected/invalid inputs for the numProps() function is written in tests.js.
+    it("Returns error when input is not an object", () => {
+      expect(numProps(5)).to.equal("Input must be an object!")
+    })
   })
   describe("Filter between", () => {
     let arr = [1, 2, 3, 4, 5, 6, 7]

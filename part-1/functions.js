@@ -22,7 +22,12 @@ module.exports = {
 
   numProps:
     function numProps(obj) {
-      return Object.keys(obj).length
+      if(typeof obj != 'object'){
+        return "Input must be an object!"
+      }
+      else{
+        return Object.keys(obj).length
+      }
     },
 
   filterBetween:
@@ -35,3 +40,6 @@ module.exports = {
       return newArray
     }
 }
+
+let date = new Date(2017, 5, 19)
+console.log(typeof date)
