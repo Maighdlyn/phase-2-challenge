@@ -7,11 +7,11 @@ const weekday = require('../functions.js').weekday
 describe("Phase 2 Challenge: Part 1", () => {
 
   describe("Show a weekday", () => {
-    it("Shows correct day for first example in challenge", () => {
+    it("Shows correct day for first example in challenge question", () => {
       let date = new Date(2017, 5, 19)
       expect(weekday(date)).to.equal("Mon")
     })
-    it("Shows correct day for second example in challenge", () => {
+    it("Shows correct day for second example in challenge question", () => {
       expect(weekday(new Date(2017, 5, 15))).to.equal("Thu")
     })
     it("Returns error when input is not a date", () => {
