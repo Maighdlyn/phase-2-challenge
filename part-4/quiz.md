@@ -79,4 +79,4 @@ _Reminder: you can use the internet to help you answer these questions :)_
 <!-- Still need to answer!!! -->
 
 - What is the main difference between `==` and `===` in JavaScript?
-<!-- Still need to answer!!! -->
+  Strict equality is '===' so it has higher standards than '==' when accepting that two things are equal. For example 4 == '4' would be true even though one is a string and one is a number but 4 === '4' would be false because strict equals requires values to be the same data type.
