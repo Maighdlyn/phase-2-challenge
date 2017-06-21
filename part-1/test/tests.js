@@ -14,7 +14,7 @@ describe("Phase 2 Challenge: Part 1", () => {
     it("Shows correct day for second example in challenge", () => {
       expect(weekday(new Date(2017, 5, 15))).to.equal("Thu")
     })
-    it("something", () => {
+    it("Returns error when input is not a date", () => {
       expect(weekday(12)).to.equal("Input must be date")
     })
   })
@@ -33,7 +33,7 @@ describe("Phase 2 Challenge: Part 1", () => {
         expect(snippet("I'm a string", "I'm also a string")).to.equal("Inputs must be a string and a number!")
     })
   })
-  
+
   describe("Number of properties", () => {
     it("Returns number of properties for provided 'friends' example", () => {
       let friend = {
