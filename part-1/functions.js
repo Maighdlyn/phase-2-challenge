@@ -7,7 +7,11 @@ module.exports = {
 
   snippet:
     function snippet (string, maxLength) {
-      if (string.length > maxLength) {
+      if (typeof string != 'string' || typeof maxLength != 'number'
+    ){
+        return "Inputs must be a string and a number!"
+      }
+      else if (string.length > maxLength) {
         var shortenedString = string.slice(0,maxLength) + "..."
         return shortenedString
       }
