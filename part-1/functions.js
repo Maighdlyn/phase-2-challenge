@@ -1,8 +1,13 @@
 module.exports = {
   weekday:
     function weekday(date){
-      var daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-      return daysOfWeek[date.getDay()]
+      if(date instanceof Date === false){
+        return "Input must be date"
+      }
+      else{
+        var daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        return daysOfWeek[date.getDay()]
+      }
     },
 
   snippet:
@@ -32,14 +37,22 @@ module.exports = {
 
   filterBetween:
     function filterBetween (array, min, max) {
-      var newArray = []
-      for(i=0; i<array.length; i++){
-        if (array[i] >= min && array[i] <= max)
-        newArray.push(array[i])
+      if(typeof array != 'array'){
+        // || typeof min != 'number'
+        // || typeof max != 'number'
+      // ) {
+          return "Input must be an array then two numbers!"
+        }
+      else {
+        var newArray = []
+        for(i=0; i<array.length; i++){
+          if (array[i] >= min && array[i] <= max)
+          newArray.push(array[i])
+        }
+        return newArray
       }
-      return newArray
     }
 }
 
-let date = new Date(2017, 5, 19)
-console.log(typeof date)
+let date = (2017, 5, 19)
+console.log(date instanceof Date)

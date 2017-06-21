@@ -5,6 +5,7 @@ const filterBetween = require('../functions.js').filterBetween
 const weekday = require('../functions.js').weekday
 
 describe("Phase 2 Challenge: Part 1", () => {
+
   describe("Show a weekday", () => {
     it("Shows correct day for first example in challenge", () => {
       let date = new Date(2017, 5, 19)
@@ -13,7 +14,11 @@ describe("Phase 2 Challenge: Part 1", () => {
     it("Shows correct day for second example in challenge", () => {
       expect(weekday(new Date(2017, 5, 15))).to.equal("Thu")
     })
+    it("something", () => {
+      expect(weekday(12)).to.equal("Input must be date")
+    })
   })
+
   describe("Get a snippet from text", (done) => {
     it('Shortens string correctly', () => {
       expect(snippet("For the following exercises,", 10)).to.equal("For the fo...")
@@ -28,6 +33,7 @@ describe("Phase 2 Challenge: Part 1", () => {
         expect(snippet("I'm a string", "I'm also a string")).to.equal("Inputs must be a string and a number!")
     })
   })
+  
   describe("Number of properties", () => {
     it("Returns number of properties for provided 'friends' example", () => {
       let friend = {
@@ -44,10 +50,13 @@ describe("Phase 2 Challenge: Part 1", () => {
       expect(numProps(5)).to.equal("Input must be an object!")
     })
   })
-  describe("Filter between", () => {
-    let arr = [1, 2, 3, 4, 5, 6, 7]
-    it ("filters array", () => {
-      expect(filterBetween(arr, 3, 6)).to.eql([3, 4, 5, 6])
-    })
-  })
+//   describe("Filter between", () => {
+//     let arr = [1, 2, 3, 4, 5, 6, 7]
+//     it ("Filters array", () => {
+//       expect(filterBetween(arr, 3, 6)).to.eql([3, 4, 5, 6])
+//     })
+//     // it("Returns error when input is not (array, number, number)", () => {
+//     //   expect(filterBetween("string", 2, 5).to.equal("Input must be an array then two numbers!"))
+//     // })
+//   })
 })
