@@ -11,6 +11,7 @@ _Reminder: you can use the internet to help you answer these questions :)_
 
 - What packages do you have installed via homebrew?
 <!-- Still need to answer!!! -->
+<!-- npm i assume? I've installed a lot of things with homebrew cask. I'm not even sure what I've installed. -->
 
 - On a UNIX computer, how do you find the process id of a running process?
 
@@ -76,7 +77,8 @@ _Reminder: you can use the internet to help you answer these questions :)_
 <!-- Still need to answer!!! -->
 
 - What files or folders do you want all git repositories to ignore?
-<!-- Still need to answer!!! -->
+
+  You want git to ignore node_modules because you would typically include instructions in the README for the viewer to load that in their terminal. You would also want git to ignore .DS_store because that's local information that helps with things like icon location.
 
 - What is the main difference between `==` and `===` in JavaScript?
   Strict equality is '===' so it has higher standards than '==' when accepting that two things are equal. For example 4 == '4' would be true even though one is a string and one is a number but 4 === '4' would be false because strict equals requires values to be the same data type.
