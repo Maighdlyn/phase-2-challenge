@@ -45,7 +45,7 @@ _Reminder: you can use the internet to help you answer these questions :)_
   email = emmamaighdlyn@gmail.com
 
 - What is the difference between a relative and absolute path?
-<!-- Still need to answer!!! -->
+A relative path is a path written in relation to the location the path occurs in, an absolute path is the specific path where the file is located on a particular computer. For example, the relative path for README.md, relative to this quiz.md file, is "../README.md" but the absolute path for me is "/Users/emmabrown/Desktop/LGProjects/phase-2-challenge/part-4/quiz.md". It's better to use relative paths because as you're reading this on your computer, it will have a different absolute path.
 
 - Lets say you have the following file structure
 
