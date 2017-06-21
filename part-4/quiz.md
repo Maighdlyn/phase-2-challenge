@@ -53,7 +53,7 @@ _Reminder: you can use the internet to help you answer these questions :)_
 
 - What is the difference between a relative and absolute path?
 
-A relative path is a path written in relation to the location the path occurs in, an absolute path is the specific path where the file is located on a particular computer. For example, the relative path for README.md, relative to this quiz.md file, is "../README.md" but the absolute path for me is "/Users/emmabrown/Desktop/LGProjects/phase-2-challenge/part-4/quiz.md". It's better to use relative paths because as you're reading this on your computer, it will have a different absolute path.
+  A relative path is a path written in relation to the location the path occurs in, an absolute path is the specific path where the file is located on a particular computer. For example, the relative path for README.md, relative to this quiz.md file, is "../README.md" but the absolute path for me is "/Users/emmabrown/Desktop/LGProjects/phase-2-challenge/part-4/quiz.md". It's better to use relative paths because as you're reading this on your computer, it will have a different absolute path.
 
 - Lets say you have the following file structure
 
@@ -70,7 +70,7 @@ A relative path is a path written in relation to the location the path occurs in
 
   And you were in the `linkedin-for-dancers` folder. What command would you use to change folders to the `pinterest-for-dogs` folder?
 
-  <!-- Still need to answer!!! -->
+  cd ../pinterest-for-dogs
 
 - What keyboard shortcut do you use, in your editor, when you want to open a specific file?
 <!-- Still need to answer!!! -->
