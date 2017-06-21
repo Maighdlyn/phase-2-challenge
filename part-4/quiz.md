@@ -6,28 +6,34 @@ _Reminder: you can use the internet to help you answer these questions :)_
 <!-- Still need to answer!!! -->
 
 - On a UNIX computer, how do you stop a running process?
+
   Ctrl + C
 
 - What packages do you have installed via homebrew?
 <!-- Still need to answer!!! -->
 
 - On a UNIX computer, how do you find the process id of a running process?
+
   $ ps aux | grep {process-name}
 <!-- Read more about this later. -->
 
 - In a terminal, what does control-c do?
+
   Control-c stops whatever process is running.
 
 - In a terminal, what does control-a do?
+
   Control-a jumps the cursor to the beginning of the line.
 
 - In a terminal, what does control-e do?
+
   Control-e jumps the cursor to the end of the line.
 
 - What keyboard shortcut do you use to split the screen in your editor?
 <!-- The internet's suggestion of command + k + arrow doesn't work... needs further digging -->
 
 - What keyboard shortcut do you use to split the screen in your terminal?
+
   To split vertically: command + shift + d
   To split horizontally: command + d
 
@@ -35,6 +41,7 @@ _Reminder: you can use the internet to help you answer these questions :)_
 <!-- Still need to answer!!! -->
 
 - What does your `~/.gitconfig` have in it? (paste the whole file here)
+
   # This is Git's per-user configuration file.
   [user]
   # Please adapt and uncomment the following lines:
@@ -45,6 +52,7 @@ _Reminder: you can use the internet to help you answer these questions :)_
   email = emmamaighdlyn@gmail.com
 
 - What is the difference between a relative and absolute path?
+
 A relative path is a path written in relation to the location the path occurs in, an absolute path is the specific path where the file is located on a particular computer. For example, the relative path for README.md, relative to this quiz.md file, is "../README.md" but the absolute path for me is "/Users/emmabrown/Desktop/LGProjects/phase-2-challenge/part-4/quiz.md". It's better to use relative paths because as you're reading this on your computer, it will have a different absolute path.
 
 - Lets say you have the following file structure
