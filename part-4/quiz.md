@@ -65,7 +65,10 @@ To split horizontally: command + d
 ```
 
 - When a terminal command completes, how can you tell if it was successful or not?
-<!-- Still need to answer!!! -->
+
+```
+Enter 'echo $?' in command line. If it returns a 0, that means the last command was successful. If it returns something other than 0, it means the last command was not successful.
+```
 
 - What does your `~/.gitconfig` have in it? (paste the whole file here)
 
